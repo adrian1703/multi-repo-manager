@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmv-connect" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmv-connect-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmv-connect-opts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmv-connect-shared-resources" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmv-connect-web-frontend" vcs="Git" />
   </component>
 </project>

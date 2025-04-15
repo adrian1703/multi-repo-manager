@@ -1,0 +1,5 @@
+git@github.com:adrian1703/kmv-connect-opts.git
+git@github.com:adrian1703/kmv-connect-shared-resources.git
+git@github.com:adrian1703/kmv-connect-api.git
+git@github.com:adrian1703/kmv-connect-web-frontend.git
+git@github.com:adrian1703/kmv-connect-backend.git
