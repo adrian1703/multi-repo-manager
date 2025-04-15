@@ -11,7 +11,7 @@ RESET='\033[0m'
 
 # Start logging
 echo -e "${CYAN}Changing directory: ${YELLOW}$SCRIPT_DIR${RESET}"
-cd "$SCRIPT_DIR"
+cd "$SCRIPT_DIR" || exit
 
 # Check if urls.txt exists
 if [[ ! -f "$SCRIPT_DIR/urls.txt" ]]; then
