@@ -9,28 +9,20 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 RESET='\033[0m'
 
-# Start logging
+repos_file_location="$SCRIPT_DIR/repos.yaml"
+
 echo -e "${CYAN}Changing directory: ${YELLOW}$SCRIPT_DIR${RESET}"
 cd "$SCRIPT_DIR" || exit
 
-# Check if urls.txt exists
-if [[ ! -f "$SCRIPT_DIR/urls.txt" ]]; then
-    echo -e "${RED}Error: urls.txt file not found in $SCRIPT_DIR${RESET}"
-    exit 1
-fi
-
-# Start cloning
-echo -e "${CYAN}Cloning repositories listed in ${YELLOW}$SCRIPT_DIR/urls.txt${RESET}..."
-
-while IFS= read -r repo; do
-    if [[ -n "$repo" ]]; then
-        echo -e "${CYAN}Cloning repository: ${YELLOW}$repo${RESET}..."
-        if git clone "$repo"; then
-            echo -e "${GREEN}Successfully cloned: ${YELLOW}$repo${RESET}"
-        else
-            echo -e "${RED}Failed to clone: ${YELLOW}$repo${RESET}"
-        fi
-    fi
-done < "$SCRIPT_DIR/urls.txt"
+echo -e "${CYAN}Cloning repositories listed in ${YELLOW}$SCRIPT_DIR/repos.yaml${RESET}..."
+yq ".repos[].url" "$repos_file_location" |
+while read -r repo; do
+  echo -e "${CYAN}Cloning repository: ${YELLOW}$repo${RESET}..."
+  if git clone "$repo"; then
+      echo -e "${GREEN}Successfully cloned: ${YELLOW}$repo${RESET}"
+  else
+      echo -e "${RED}Failed to clone: ${YELLOW}$repo${RESET}"
+  fi
+done
 
 echo -e "${GREEN}Finished cloning repositories.${RESET}"
