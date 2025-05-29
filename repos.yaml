@@ -14,3 +14,6 @@ repos:
   - name: kmv-connect-backend
     url: git@github.com:adrian1703/kmv-connect-backend.git
     branch: main
+  - name: cats-framework
+    url: git@github.com:adrian1703/cats.git
+    branch: main
