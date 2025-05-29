@@ -11,12 +11,12 @@ RESET='\033[0m'
 repos_file_location="$SCRIPT_DIR/repos.yaml"
 
 if [[ -z "$1" ]]; then
-  echo -e "${YELLOW}WARN: No command provided!${RESET}"
-  echo -e "${CYAN}DEFAULT:${RESET} ${GREEN}pwd${RESET}"
   CMD="pwd"
+  echo -e "${YELLOW}WARN: No command provided!${RESET}"
+  echo -e "${CYAN}DEFAULT:${RESET} ${GREEN}${CMD}${RESET}"
 else
-  echo -e "${GREEN}Command provided: '$1'${RESET}"
-  CMD="$1"
+  CMD="$*"
+  echo -e "${GREEN}Command provided: '${CMD}'${RESET}"
 fi
 
 
