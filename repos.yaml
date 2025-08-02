@@ -17,3 +17,6 @@ repos:
   - name: cats
     url: git@github.com:adrian1703/cats.git
     branch: main
+  - name: drag-n-drop-input-component
+    url: git@github.com:adrian1703/drag-n-drop-input-component.git
+    branch: main     
