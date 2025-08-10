@@ -1,4 +1,22 @@
 repos:
-  - name: pc-sync
-    url: git@github.com:adrian1703/pc-sync.git
+  - name: kmv-connect-opts
+    url: git@github.com:adrian1703/kmv-connect-opts.git
+    branch: main
+  - name: kmv-connect-shared-resources
+    url: git@github.com:adrian1703/kmv-connect-shared-resources.git
+    branch: main
+  - name: kmv-connect-api
+    url: git@github.com:adrian1703/kmv-connect-api.git
+    branch: main
+  - name: kmv-connect-web-frontend
+    url: git@github.com:adrian1703/kmv-connect-web-frontend.git
+    branch: main
+  - name: kmv-connect-backend
+    url: git@github.com:adrian1703/kmv-connect-backend.git
+    branch: main
+  - name: cats
+    url: git@github.com:adrian1703/cats.git
+    branch: main
+  - name: drag-n-drop-input-component
+    url: git@github.com:adrian1703/drag-n-drop-input-component.git
     branch: main     
