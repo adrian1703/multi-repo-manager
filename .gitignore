@@ -3,7 +3,7 @@
 
 # Except these files (whitelist)
 !.gitignore
-!clone.sh
-!meta.sh
+!clone.bash
+!meta.bash
 !readme.me
 !repos.yaml
