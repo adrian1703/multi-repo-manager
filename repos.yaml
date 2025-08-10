@@ -2,3 +2,6 @@ repos:
   - name: pc-sync
     url: git@github.com:adrian1703/pc-sync.git
     branch: main     
+  - name: keyboard
+    url: git@github.com:adrian1703/Glove80Firmaware.git
+    branch: main
