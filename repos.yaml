@@ -1,7 +1,7 @@
 repos:
-  - name: pc-sync
-    url: git@github.com:adrian1703/pc-sync.git
+  - name: a-trade-frontend
+    url: git@github.com:adrian1703/a-trade-frontend.git
     branch: main     
-  - name: keyboard
-    url: git@github.com:adrian1703/Glove80Firmaware.git
+  - name: web-ui-template 
+    url: git@github.com:adrian1703/web-ui-template.git
     branch: main
