@@ -2,6 +2,6 @@ repos:
   - name: a-trade-frontend
     url: git@github.com:adrian1703/a-trade-frontend.git
     branch: main     
-  - name: web-ui-template 
-    url: git@github.com:adrian1703/web-ui-template.git
+  - name: a-trade-data
+    url: git@github.com:adrian1703/a-trade-data.git
     branch: main
