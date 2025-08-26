@@ -2,6 +2,6 @@ repos:
   - name: a-trade-frontend
     url: git@github.com:adrian1703/a-trade-frontend.git
     branch: main     
-  - name: a-trade-data
-    url: git@github.com:adrian1703/a-trade-data.git
+  - name: a-trade-data-module
+    url: git@github.com:adrian1703/a-trade-data-module.git
     branch: main
